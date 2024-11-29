@@ -252,14 +252,14 @@ body{
     content: "";
     background-color: var(--secondary-color);
     width: 100px;
-    height: calc(100% + 100px);
+    height: 385px;
     position: absolute;
-    right: 0;
-    top: -52px;
-    z-index: -1;
+    right: -35%;
 }
 .services .services-content .image img{
-    width: 260px;
+    position: absolute;
+    top: 70px;
+
 }
 /*End Services Section*/
 /*Start Portfolio*/
@@ -278,7 +278,23 @@ body{
     background-color: white;
 }
 .portfolio .portfolio-content .card img{
-    max-width: 100%;
+   margin-left: 15%;
+   margin-top: 10px;
+}
+@media (max-width: 1198px ){
+    .portfolio .portfolio-content .card img{
+        margin-left: 22%;
+     }
+}
+@media (max-width: 989px ){
+    .portfolio .portfolio-content .card img{
+        margin-left: 12%;
+     }
+}
+@media (max-width: 655px ){
+    .portfolio .portfolio-content .card img{
+        width: 75%;
+     }
 }
 .portfolio .portfolio-content .card .info{
     padding: 20px;
@@ -327,7 +343,7 @@ margin: 0 auto 60px;
     position: absolute;
     background-color: #ebeced;
     width: 100px;
-    height: calc(100% + 80px);
+    height: 90%;
     top: -40px;
     left: -20px;
     z-index: -1;
@@ -336,7 +352,7 @@ margin: 0 auto 60px;
     content: "";
     position: absolute;
     width: 120px;
-    height: 300px;
+    height: 250px;
     border-left: 80px solid var(--main-color);
     border-bottom: 80px solid var(--main-color);
     right: -150px;
